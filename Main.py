@@ -8,6 +8,7 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 from subprocess import call
 import time 
 import cowsay
+import pygame
 
 # Colors 
 COLOR_BANNER = '\033[0;36m'
@@ -22,6 +23,12 @@ COLOR_BANNER8 = '\033[1;34m'
 COLOR_BANNER9 = '\033[1;30m'
 COLOR_BANNER10 = '\033[1;37m'
 COLOR_BANNER_END = '\033[0;m'
+
+
+pygame.mixer.init()
+pygame.mixer.music.load('Sounds/Sound1.wav')
+pygame.mixer.music.play()
+call("clear")
 
 print("""
 
@@ -104,6 +111,10 @@ print("\n","", signStart, qr, end="")
 
 
 if qr == "yes":
+	call("clear")
+	pygame.mixer.init()
+	pygame.mixer.music.load('Sounds/Sound2.wav')
+	pygame.mixer.music.play()
 	print("""
 
                                                   *#.,,,,,,,,,,,,.,&,,,,,,@
@@ -146,6 +157,9 @@ print("\n")
 sec1 = input(" ",)
 
 if sec1 == "1":
+	pygame.mixer.init()
+	pygame.mixer.music.load('Sounds/Sound3.wav')
+	pygame.mixer.music.play()
 	call('clear')
 	print("""
 
@@ -178,7 +192,7 @@ if sec1 == "1":
 
 		""")
 
-	text = ' You find a child to your side \n You rembember to yourself when was child'
+	text = ' You find a child to your side \n You rembember to yourself when was child \n'
 	print(text.upper())
 
 	print(signStart, "You decide to be quiet")
@@ -188,7 +202,11 @@ if sec1 == "1":
 	sec1_1 = input(" ",)
 
 	if sec1_1 == "1":
+		pygame.mixer.init()
+		pygame.mixer.music.load('Sounds/end_Sound.wav')
+		pygame.mixer.music.play()
 		call("clear")
+		time.sleep(15)
 
 
 		print("")
