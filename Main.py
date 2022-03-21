@@ -28,7 +28,7 @@ COLOR_BANNER_END = '\033[0;m'
 
 
 pygame.mixer.init()
-pygame.mixer.music.load('Sounds/Sound1.wav')
+pygame.mixer.music.load('Sounds/1 SoundStart.wav')
 pygame.mixer.music.play()
 
 
@@ -116,7 +116,7 @@ if qr == "yes":
 
 	call('clear')
 	pygame.mixer.init()
-	pygame.mixer.music.load('Sounds/Sound2.wav')
+	pygame.mixer.music.load('Sounds/2 Sound1.wav')
 	pygame.mixer.music.play()
 
 	print("""
@@ -159,7 +159,7 @@ if qr == "yes":
 
 	if sec1 == "1":
 		pygame.mixer.init()
-		pygame.mixer.music.load('Sounds/Sound3.wav')
+		pygame.mixer.music.load('Sounds/3 Sound2.wav')
 		pygame.mixer.music.play()
 		call('clear')
 		print("""
@@ -207,7 +207,7 @@ if qr == "yes":
 			status = True
 			while status:
 				pygame.mixer.init()
-				pygame.mixer.music.load('Sounds/end_Sound.wav')
+				pygame.mixer.music.load('Sounds/end_SoundMrRobot.wav')
 				pygame.mixer.music.play()
 				call("clear")
 				# time.sleep(5)
@@ -301,7 +301,7 @@ if qr == "yes":
 			while status2:
 
 				pygame.mixer.init()
-				pygame.mixer.music.load('Sounds/Test1.mp3')
+				pygame.mixer.music.load('Sounds/IslandSound.mp3')
 				pygame.mixer.music.play()
 				call("clear")
 				# time.sleep(5)
@@ -403,7 +403,8 @@ if qr == "yes":
 
 			# ------- DEMAS CODIGO ACERCA DE COMO DESCOFICIAR EL ARCHIVO O UNIDAD  ------- 
 	if sec1 == "2":
-		pygame.mixer.music.load('Sounds/Sound3.wav')
+		pygame.mixer.init()
+		pygame.mixer.music.load('Sounds/Sound4.wav')
 		pygame.mixer.music.play()
 
 		call('clear')
@@ -449,10 +450,19 @@ if qr == "yes":
 		text2 = ' You found the door hidden \n almost with dont see nothing \n'
 		print(text2.upper())
 
-		print(signStart, "You decide to be quiet")
-		print(signStart, "you put out the matchstick")
+		print(signStart, "Find a key to open de door")
+		print(signStart, "Come back and find during the walk, \n   with what open de door")
 
 		print("\n")
-		sec1_1 = input(" ")
+
+		sec1_2 = input(" ")
+
+		if sec1_2 == "1":
+			print("op 1")
+			
+		elif sec1_2 =="2": 
+			print("op 2")
+
+
 
 
