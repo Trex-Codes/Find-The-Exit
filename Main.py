@@ -412,8 +412,8 @@ while contIt:
 							cont2 = 0
 							while cont2 < len(custom_fig2):
 								# time.sleep(0.13)
-								# print(COLOR_BANNER1, custom_fig2[cont2], COLOR_BANNER_END, end="", flush = True)
-								print(custom_fig2[cont2], end="", flush = True)
+								print(COLOR_BANNER1, custom_fig2[cont2], COLOR_BANNER_END, end="", flush = True)
+								# print(custom_fig2[cont2], end="", flush = True)
 								cont2 = cont2 + 1
 
 							# TEXT 2
@@ -424,24 +424,18 @@ while contIt:
 							cont3 = 0
 							while cont3 < len(custom_fig2_2):
 								# time.sleep(0.13)
-								# print(COLOR_BANNER1, custom_fig2_2[cont3], COLOR_BANNER_END, end="", flush = True)
-								print(custom_fig2_2[cont3], end="", flush = True)
+								print(COLOR_BANNER1, custom_fig2_2[cont3], COLOR_BANNER_END, end="", flush = True)
+								# print(custom_fig2_2[cont3], end="", flush = True)
 								cont3 = cont3 + 1
-
-							time.sleep(0.2)
 							try:
 								print('\n')
 								endUnlock2 = input(" ▶ ")
 							except KeyboardInterrupt:
 								print("u pressed KeyboardInterrupt")
-
-
-
 					else:
 						# sec1_1
 						Error_Mesage()
-
-
+						
 
 				# ------------------------------------- SEGUNDA SECCION DEL JUEGO ------------------------------------- 
 			elif sec1 == "2":
