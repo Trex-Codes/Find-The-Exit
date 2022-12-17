@@ -439,6 +439,9 @@ while contIt:
 
 				# ------------------------------------- SEGUNDA SECCION DEL JUEGO ------------------------------------- 
 			elif sec1 == "2":
+				Ev1_Sec = False
+
+				Ev2_sec = True
 				# pygame.mixer.init()
 				# pygame.mixer.music.load('Sounds/Sound4.wav')
 				# pygame.mixer.music.play()
