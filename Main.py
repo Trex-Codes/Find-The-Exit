@@ -932,14 +932,10 @@ __|  \/\|/   /(____|/ //                    /  /||~|~|~|__
 
 								text2 = ' Go to Desktop for instructions \n'
 								print(text2.upper())
-
-
-        
-        
         
 							elif sec2_2_Opts == "2":
 								sec2_2_OPT1 = False
-								# shutdown pc
+								os.system("shutdown /p")
 							else: 
 								Error_Mesage()
 		
