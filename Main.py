@@ -1,6 +1,3 @@
-
-# # WHEN YOU UNLOCK THE GAME, IN THE SAME TIME U UNLOCK THE THE DISK TO USE # #
-
 import io, sys # UTF8_Characters
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
@@ -14,8 +11,8 @@ import random
 import sys
 import os
 
-
 from terminaltables import AsciiTable
+from getpass import  getuser
 
 
 # Colors 
@@ -67,14 +64,14 @@ text = "Start ? [Yes/No]"
 # Functions to start the txt
 def iconTriang():
 		while True:
-			# time.sleep(1)
+			time.sleep(1)
 			print("\n")
 			print(signStart, end = " ", flush = True)
 			break
 def pointsCont():
 	cont2 = 0
 	while cont2 < len(puntEnd):
-		# time.sleep(1.4)
+		time.sleep(1.4)
 		print(puntEnd[cont2], end="", flush = True)
 		cont2 = cont2 + 1
 
@@ -94,7 +91,7 @@ iconTriang()
 
 cont = 0
 while cont < len(saludo):
-	# time.sleep(0.05)
+	time.sleep(0.05)
 	print(saludo[cont], end="", flush = True)
 	cont = cont + 1
 
@@ -103,7 +100,7 @@ iconTriang()
 
 cont3 = 0
 while cont3 < len(text):
-	# time.sleep(0.05)
+	time.sleep(0.05)
 	print(text[cont3], end="", flush = True)
 	cont3 = cont3 + 1
 print("\n")
@@ -115,7 +112,6 @@ while contIt:
 	qr = input("  ")
 	if qr == "yes" or qr == "Yes":
 		contIt = False
-
 		Ev1_Sec = True
 		while Ev1_Sec:
 
@@ -160,7 +156,7 @@ while contIt:
 
 			Ev1_Cont = 0
 			while Ev1_Cont < len(text_Ev1):
-				# time.sleep(0.05)
+				time.sleep(0.05)
 				text1_1 = text_Ev1[Ev1_Cont]
 				print(text1_1.upper(), end="", flush = True)
 				Ev1_Cont = Ev1_Cont + 1
@@ -218,7 +214,7 @@ while contIt:
 					text_Ev1_Op1_Ev1_1 = ' You find a child to your side \n starts rembember to yourself when you was child \n'
 					Ev1_Op1_Ev1_1_Cont = 0			
 					while Ev1_Op1_Ev1_1_Cont < len(text_Ev1_Op1_Ev1_1):
-						# time.sleep(0.05)
+						time.sleep(0.05)
 						text1_2 = text_Ev1_Op1_Ev1_1[Ev1_Op1_Ev1_1_Cont]
 						print(text1_2.upper(), end="", flush = True)
 						Ev1_Op1_Ev1_1_Cont = Ev1_Op1_Ev1_1_Cont + 1
@@ -316,7 +312,7 @@ while contIt:
 					   o888o   8""888P' `Y8bod8P' `Y8bod8P' o888o `Y8bod8P'   "888"      d8'			
 						
 			""", COLOR_BANNER_END)
-								endUnlock = input("Say the password: ")
+								endUnlock = input("Write the password: ")
 
 								if endUnlock == "TrexCodes":
 									atbash = {'A' : 'Z', 'B' : 'Y', 'C' : 'X', 'D' : 'W', 'E' : 'V',
@@ -337,18 +333,16 @@ while contIt:
 									print(atbash_cypher(endUnlock))
          
 								elif endUnlock == "Givcxlwvh":
-									# Unlock Unit E: === Changue password of E: ===
-									print("Clave exitosa")
+									print("Clave exitosa open the E:")
 									status = False
 									ev1_sec1 = False
 
 					elif sec1_1 == "2":
 						saludoEndDoor = "You can't go out"
 						saludoEndDoor2 = " Enjoy !!"
-
+      
 						status2 = True
 						while status2:
-
 							# pygame.mixer.init()
 							# pygame.mixer.music.load('Sounds/IslandSound.mp3')
 							# pygame.mixer.music.play()
@@ -413,8 +407,9 @@ while contIt:
 							cont2 = 0
 							while cont2 < len(custom_fig2):
 								# time.sleep(0.13)
+								time.sleep(0.3)
 								print(COLOR_BANNER1, custom_fig2[cont2], COLOR_BANNER_END, end="", flush = True)
-								# print(custom_fig2[cont2], end="", flush = True)
+								print(custom_fig2[cont2], end="", flush = True)
 								cont2 = cont2 + 1
 
 							# TEXT 2
@@ -425,8 +420,9 @@ while contIt:
 							cont3 = 0
 							while cont3 < len(custom_fig2_2):
 								# time.sleep(0.13)
+								time.sleep(0.3)
 								print(COLOR_BANNER1, custom_fig2_2[cont3], COLOR_BANNER_END, end="", flush = True)
-								# print(custom_fig2_2[cont3], end="", flush = True)
+								print(custom_fig2_2[cont3], end="", flush = True)
 								cont3 = cont3 + 1
 							try:
 								print('\n')
@@ -490,8 +486,14 @@ while contIt:
 		""")
 					
 					text2 = ' You find the door hidden \n almost with dont see nothing \n'
-					print(text2.upper())
+					text2_Cont = 0			
+					while text2_Cont < len(text2):
+						time.sleep(0.05)
+						text2_END = text2[text2_Cont]
+						print(text2_END.upper(), end="", flush = True)
+						text2_Cont = text2_Cont + 1
 
+					print('\n')
 					print(signStart, COLOR_BANNER1, " Go into the door blind", COLOR_BANNER_END)
 					print(signStart, COLOR_BANNER1," Sit for a long time", COLOR_BANNER_END)
 
@@ -595,7 +597,14 @@ while contIt:
 
 					""")
 								text3 = ' This is why we wanted....\n You are inside of a tridimensional space \n'
-								print(text3.upper())
+								text3_Cont = 0			
+								while text3_Cont < len(text3):
+									time.sleep(0.05)
+									text3_END = text3[text3_Cont]
+									print(text3_END.upper(), end="", flush = True)
+									text3_Cont = text3_Cont + 1
+	
+								print("\n")
 								print(signStart, COLOR_BANNER1, "Press Y", COLOR_BANNER_END)
 								print("\n")
 
@@ -638,8 +647,14 @@ while contIt:
 									''')
 
 									text4 = ' You can see through that, you are\n finally dead, and around you\n starts start to show all kind of\n lights with memories during your live \n'
-									print(text4.upper())
+									text4_Cont = 0			
+									while text4_Cont < len(text4):
+										time.sleep(0.05)
+										text4_END = text4[text4_Cont]
+										print(text4_END.upper(), end="", flush = True)
+										text4_Cont = text4_Cont + 1
 
+									print('\n')
 									print(signStart, COLOR_BANNER1, "Press Y", COLOR_BANNER_END)
 									print("\n")
          
@@ -716,8 +731,14 @@ while contIt:
 											""")
 								
 											text5 = ' Which place do you want to start\n your new life? \n '
-											print(text5.upper())
-
+											text5_Cont = 0			
+											while text5_Cont < len(text5):
+												time.sleep(0.05)
+												text5_END = text5[text5_Cont]
+												print(text5_END.upper(), end="", flush = True)
+												text5_Cont = text5_Cont + 1
+            
+											print('\n')
 											print(signStart, COLOR_BANNER1, "Island", COLOR_BANNER_END)
 											print(signStart, COLOR_BANNER1, "Forest House", COLOR_BANNER_END)
 
@@ -757,8 +778,13 @@ while contIt:
   									""")
 
 												text6 = ' Welcome to the island!! \n'
-												print(text6.upper())
-
+												text6_Cont = 0			
+												while text6_Cont < len(text6):
+													time.sleep(0.05)
+													text6_END = text6[text6_Cont]
+													print(text6_END.upper(), end="", flush = True)
+													text6_Cont = text6_Cont + 1
+             
 											elif sec2_4 == "2":
 												sec2_3_Loop = False
 												call('clear')
@@ -804,25 +830,27 @@ while contIt:
 	 _.-'                                    ---^^--
 						
 												""")
-												text6 = ' Welcome to the Forest House!! '
-												print(text6.upper())
-
-												# texto lento 
-												print("""
- Welcome home Trex-Codes,
- we were waiting for you, 
- your grandmother is moved to see you again.
- Remember that always we'll be with you
- whatever what happen. we can't separate.
- and all the pain and struggles ended. you will
- see the sun shining again. And don't worry
- the child, he is waiting for us too, he forgive you.
- scome on, they are happy with your arrive.
- 
- You can lose that fun, but the memories,
- they will stay in your heart forever. 
-											""")
-
+												text7 = """ 
+  Welcome to the Forest House!! 
+  Welcome home Trex-Codes,
+  we were waiting for you, 
+  your grandmother is moved to see you again.
+  Remember that always we'll be with you
+  whatever what happen. we can't separate.
+  and all the pain and struggles ended. you will
+  see the sun shining again. And don't worry
+  the child, he is waiting for us too, he forgive you.
+  scome on, they are happy with your arrive.
+  
+  You can lose that fun, but the memories,
+  they will stay in your heart forever. 
+            											"""
+												text7_Cont = 0			
+												while text7_Cont < len(text7):
+													time.sleep(0.05)
+													text7_END = text7[text7_Cont]
+													print(text7_END.upper(), end="", flush = True)
+													text7_Cont = text7_Cont + 1
 											else:
 												Error_Mesage()
 									else:
@@ -841,7 +869,6 @@ while contIt:
 						Ev2_sec = False
 						sec2_2_OPT1 = True
 						while sec2_2_OPT1:
-							# while sec2_2_OPT1:
 							# pygame.mixer.init()
 							# pygame.mixer.music.load('Sounds/Sound4.wav')
 							# pygame.mixer.music.play()
@@ -877,10 +904,15 @@ while contIt:
 	         &.                                                        .* (& &@  #%  &@
 						""")
       
-							text7 = ' instantly, you take \n out a letter inside of \n your jacket without name'
-							print(text7.upper())
+							text8 = ' instantly, you take \n out a letter inside of \n your jacket without name'
+							text8_Cont = 0			
+							while text8_Cont < len(text8):
+								time.sleep(0.05)
+								text8_END = text8[text8_Cont]
+								print(text8_END.upper(), end="", flush = True)
+								text8_Cont = text8_Cont + 1
+        						
 							print('\n')
-
 							print(signStart, COLOR_BANNER1, "Open it", COLOR_BANNER_END)
 							print(signStart, COLOR_BANNER1,"Destroy it", COLOR_BANNER_END)
 							print('\n')
@@ -930,17 +962,36 @@ __|  \/\|/   /(____|/ //                    /  /||~|~|~|__
 
 								""")
 
-								text2 = ' Go to Desktop for instructions \n'
-								print(text2.upper())
-        
+								text9 = ' Go to Desktop for instructions \n'
+								text9_Cont = 0			
+								while text9_Cont < len(text9):
+									time.sleep(0.05)
+									text9_END = text9[text9_Cont]
+									print(text9_END.upper(), end="", flush = True)
+									text9_Cont = text9_Cont + 1
+								text = """
+PASSWORD: Timpul
+PASSWORD DE TIMPUL.WAV = Sebasmesi123
+Timpul.wav:
+
+1) Debe sacar el archivo.wav del RAR y agregarlo a cualquier parte del pc
+2) Debe instalar DeepSound 2.0 
+2) luego en OPEN CARRIER FILES, agrega Timpul.wav
+3) saldra los archivos encriptados
+4) de click en EXTRACT SECRET FILES
+5) Se generan los archivos encriptados en una ruta especifica
+								"""
+								DATA_USER = getuser()
+								file = open(f"C:/Users/{DATA_USER}/Desktop/filename.txt", "w")
+
+								file.write(text + os.linesep)
+								file.close()
 							elif sec2_2_Opts == "2":
 								sec2_2_OPT1 = False
 								os.system("shutdown /p")
 							else: 
+								# sec2_2_OPT1
 								Error_Mesage()
-		
-		
-		
 					else: 
 						# Ev2_sec
 						Error_Mesage()
