@@ -6,7 +6,7 @@ from subprocess import call
 from pyfiglet import Figlet
 import time 
 import cowsay
-# import pygame
+import pygame
 import random
 import sys
 import os
@@ -30,9 +30,9 @@ COLOR_BANNER10 = '\033[1;37m'
 COLOR_BANNER_END = '\033[0;m'
 
 
-# pygame.mixer.init()
-# pygame.mixer.music.load('Sounds/1 SoundStart.wav')
-# pygame.mixer.music.play()
+pygame.mixer.init()
+pygame.mixer.music.load('Sounds/Sec_1/ballonASCII.wav')
+pygame.mixer.music.play()
 
 # ballon ASCII
 print("""
@@ -64,14 +64,14 @@ text = "Start ? [Yes/No]"
 # Functions to start the txt
 def iconTriang():
 		while True:
-			time.sleep(1)
+			# time.sleep(1)
 			print("\n")
 			print(signStart, end = " ", flush = True)
 			break
 def pointsCont():
 	cont2 = 0
 	while cont2 < len(puntEnd):
-		time.sleep(1.4)
+		# time.sleep(1.4)
 		print(puntEnd[cont2], end="", flush = True)
 		cont2 = cont2 + 1
 
@@ -91,7 +91,7 @@ iconTriang()
 
 cont = 0
 while cont < len(saludo):
-	time.sleep(0.05)
+	# time.sleep(0.05)
 	print(saludo[cont], end="", flush = True)
 	cont = cont + 1
 
@@ -100,7 +100,7 @@ iconTriang()
 
 cont3 = 0
 while cont3 < len(text):
-	time.sleep(0.05)
+	# time.sleep(0.05)
 	print(text[cont3], end="", flush = True)
 	cont3 = cont3 + 1
 print("\n")
@@ -116,9 +116,9 @@ while contIt:
 		while Ev1_Sec:
 
 			call('clear')
-			# pygame.mixer.init()
-			# pygame.mixer.music.load('Sounds/2 Sound1.wav')
-			# pygame.mixer.music.play()
+			pygame.mixer.init()
+			pygame.mixer.music.load('Sounds/Sec_1/Ev1.wav')
+			pygame.mixer.music.play()
 
 			# Ev1 
 			# from Resources_ASCII.Side_1 import Ev1
@@ -151,12 +151,11 @@ while contIt:
                    &.                                                        .* (& &@  #%  &@          
 """)
 
-			time.sleep(1)	
 			text_Ev1 = "\n You be in a cave without light, \n only having a lit matchstick. \n What do you should to do?\n"
 
 			Ev1_Cont = 0
 			while Ev1_Cont < len(text_Ev1):
-				time.sleep(0.05)
+				# time.sleep(0.05)
 				text1_1 = text_Ev1[Ev1_Cont]
 				print(text1_1.upper(), end="", flush = True)
 				Ev1_Cont = Ev1_Cont + 1
@@ -173,9 +172,9 @@ while contIt:
 
 				ev1_sec1 = True
 				while ev1_sec1:
-					# pygame.mixer.init()
-					# pygame.mixer.music.load('Sounds/3 Sound2.wav')
-					# pygame.mixer.music.play()
+					pygame.mixer.init()
+					pygame.mixer.music.load('Sounds/Sec_1/Ev1_Op1_Ev1.wav')
+					pygame.mixer.music.play()
 					call('clear')
 
 					# Ev1_Op1_Ev1
@@ -214,7 +213,7 @@ while contIt:
 					text_Ev1_Op1_Ev1_1 = ' You find a child to your side \n starts rembember to yourself when you was child \n'
 					Ev1_Op1_Ev1_1_Cont = 0			
 					while Ev1_Op1_Ev1_1_Cont < len(text_Ev1_Op1_Ev1_1):
-						time.sleep(0.05)
+						# time.sleep(0.05)
 						text1_2 = text_Ev1_Op1_Ev1_1[Ev1_Op1_Ev1_1_Cont]
 						print(text1_2.upper(), end="", flush = True)
 						Ev1_Op1_Ev1_1_Cont = Ev1_Op1_Ev1_1_Cont + 1
@@ -230,9 +229,9 @@ while contIt:
 					if sec1_1 == "1":
 							status = True
 							while status:
-								# pygame.mixer.init()
-					 			# pygame.mixer.music.load('Sounds/end_SoundMrRobot.wav')
-					 			# pygame.mixer.music.play()
+								pygame.mixer.init()
+								pygame.mixer.music.load('Sounds/Sec_1/end_SoundMrRobot.wav')
+								pygame.mixer.music.play()
 								call("clear")
 
 								# Ev1_Op1_Ev1_1_Op1_End 
@@ -343,12 +342,12 @@ while contIt:
       
 						status2 = True
 						while status2:
-							# pygame.mixer.init()
-							# pygame.mixer.music.load('Sounds/IslandSound.mp3')
-							# pygame.mixer.music.play()
+							pygame.mixer.init()
+							pygame.mixer.music.load('Sounds/Sec_1/Ev1_Op1_Ev1_1_Op2_End.mp3')
+							pygame.mixer.music.play()
 							call("clear")
 
-							#Ev1.Op1.Ev1.1.Op2.End ASCII
+							#Ev1_Op1_Ev1_1_Op2_End ASCII
 							print("""
 
 	▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓████████████████████████████████████████████████████████████████▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒
@@ -406,8 +405,7 @@ while contIt:
 
 							cont2 = 0
 							while cont2 < len(custom_fig2):
-								# time.sleep(0.13)
-								time.sleep(0.3)
+								# time.sleep(0.3)
 								print(COLOR_BANNER1, custom_fig2[cont2], COLOR_BANNER_END, end="", flush = True)
 								print(custom_fig2[cont2], end="", flush = True)
 								cont2 = cont2 + 1
@@ -419,8 +417,7 @@ while contIt:
 
 							cont3 = 0
 							while cont3 < len(custom_fig2_2):
-								# time.sleep(0.13)
-								time.sleep(0.3)
+								# time.sleep(0.3)
 								print(COLOR_BANNER1, custom_fig2_2[cont3], COLOR_BANNER_END, end="", flush = True)
 								print(custom_fig2_2[cont3], end="", flush = True)
 								cont3 = cont3 + 1
@@ -440,13 +437,13 @@ while contIt:
 
 				Ev2_sec = True
 				while Ev2_sec:
-					# pygame.mixer.init()
-					# pygame.mixer.music.load('Sounds/Sound4.wav')
-					# pygame.mixer.music.play()
+					pygame.mixer.init()
+					pygame.mixer.music.load('Sounds/Sec_2/Ev1_Op2_Ev1_1.wav')
+					pygame.mixer.music.play()
 
 					call('clear')
 
-					# Ev1.Op2.Ev1.1
+					# Ev1_Op2_Ev1_1
 					print("""
 
 			                                          *#.,,,,,,,,,,,,.,&,,,,,,@
@@ -488,7 +485,7 @@ while contIt:
 					text2 = ' You find the door hidden \n almost with dont see nothing \n'
 					text2_Cont = 0			
 					while text2_Cont < len(text2):
-						time.sleep(0.05)
+						# time.sleep(0.05)
 						text2_END = text2[text2_Cont]
 						print(text2_END.upper(), end="", flush = True)
 						text2_Cont = text2_Cont + 1
@@ -505,11 +502,11 @@ while contIt:
 						while sec1_2_OPT1:
           
 							call('clear')
-							# pygame.mixer.init()
-							# pygame.mixer.music.load('Sounds/Sound4.wav')
-							# pygame.mixer.music.play()
+							pygame.mixer.init()
+							pygame.mixer.music.load('Sounds/Sec_2/Ev1_Op2_Ev1_1_Op1.wav')
+							pygame.mixer.music.play()
 
-							# Ev1.Op2.Ev1.1.Op1
+						 	# Ev1_Op2_Ev1_1_Op1
 							print("""
 
 			                                          *#.,,,,,,,,,,,,.,&,,,,,,@
@@ -556,11 +553,11 @@ while contIt:
 								sec1_2_OPT1 = False
         
 								call('clear')
-								# pygame.mixer.init()
-								# pygame.mixer.music.load('Sounds/Sound4.wav')
-								# pygame.mixer.music.play()
+								pygame.mixer.init()
+								pygame.mixer.music.load('Sounds/Sec_2/Ev1_Op2_Ev1_1_Op1_Ev1.wav')
+								pygame.mixer.music.play()
 
-								# Ev1.Op2.Ev1.1.Op1-Ev1
+								# Ev1_Op2_Ev1_1_Op1_Ev1
 								print(r"""
 							
                 ______________________
@@ -599,7 +596,7 @@ while contIt:
 								text3 = ' This is why we wanted....\n You are inside of a tridimensional space \n'
 								text3_Cont = 0			
 								while text3_Cont < len(text3):
-									time.sleep(0.05)
+									# time.sleep(0.05)
 									text3_END = text3[text3_Cont]
 									print(text3_END.upper(), end="", flush = True)
 									text3_Cont = text3_Cont + 1
@@ -612,11 +609,11 @@ while contIt:
 
 								if sec2_2 == "Y" or sec2_2 == "y":
 									call('clear')
-									# pygame.mixer.init()
-									# pygame.mixer.music.load('Sounds/Sound4.wav')
-									# pygame.mixer.music.play()
+									pygame.mixer.init()
+									pygame.mixer.music.load('Sounds/Sec_2/Ev1_Op2_Ev1_1_Op1_Ev1_1.wav')
+									pygame.mixer.music.play()
 
-									# Ev1.Op2.Ev1.1.Op1-Ev1.1
+									# Ev1_Op2_Ev1_1_Op1_Ev1_1
 									print('''
 
 
@@ -649,7 +646,7 @@ while contIt:
 									text4 = ' You can see through that, you are\n finally dead, and around you\n starts start to show all kind of\n lights with memories during your live \n'
 									text4_Cont = 0			
 									while text4_Cont < len(text4):
-										time.sleep(0.05)
+										# time.sleep(0.05)
 										text4_END = text4[text4_Cont]
 										print(text4_END.upper(), end="", flush = True)
 										text4_Cont = text4_Cont + 1
@@ -664,13 +661,13 @@ while contIt:
 										sec2_3_Loop = True
 										while sec2_3_Loop:
               
-											# pygame.mixer.init()
-											# pygame.mixer.music.load('Sounds/Sound4.wav')
-											# pygame.mixer.music.play()
+											pygame.mixer.init()
+											pygame.mixer.music.load('Sounds/Sec_2/Ev1_Op2_Ev1_1_Op1_Ev1_2.wav')
+											pygame.mixer.music.play()
 
 											call('clear')
 
-											# Ev1.Op2.Ev1.1.Op1-Ev1.2
+											# Ev1_Op2_Ev1_1_Op1_Ev1_2
 											print(r"""
             
             
@@ -733,7 +730,7 @@ while contIt:
 											text5 = ' Which place do you want to start\n your new life? \n '
 											text5_Cont = 0			
 											while text5_Cont < len(text5):
-												time.sleep(0.05)
+												# time.sleep(0.05)
 												text5_END = text5[text5_Cont]
 												print(text5_END.upper(), end="", flush = True)
 												text5_Cont = text5_Cont + 1
@@ -748,51 +745,54 @@ while contIt:
 
 											if sec2_4 == "1": 
 												sec2_3_Loop = False
+												status3 = True
+												pygame.mixer.init()
+												pygame.mixer.music.load('Sounds/Sec_2/Ev1_Op2_Ev1_1_Op1_Ev1_2_Op1_End.wav')
+												pygame.mixer.music.play()
 												call('clear')
-												# pygame.mixer.init()
-												# pygame.mixer.music.load('Sounds/Sound4.wav')
-												# pygame.mixer.music.play()
 
-												# Ev1.Op2.Ev1.1.Op1-Ev1.2-Op1.End
+												# Ev1_Op2_Ev1_1_Op1_Ev1_2_Op1_End
 												print(r"""
 
 
-                ,.  _~-.,               .
-             ~'`_ \/,_. \_
-            / ,"_>@`,__`~.)             |           .
-            | |  @@@@'  ",! .           .          '
-            |/   ^^@     .!  \          |         /
-            `' .^^^     ,'    '         |        .             .
-             .^^^   .          \                /          .
-            .^^^       '  .     \       |      /       . '
-  .,.,.     ^^^             ` .   .,+~'`^`'~+,.     , '
-  &&&&&&,  ,^^^^.  . ._ ..__ _  .'             '. '_ __ ____ __ _ .. .  .
-  %%%%%%%%%^^^^^^%%&&;_,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,
-  &&&&&%%%%%%%%%%%%%%%%%%&&;,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=
-  %%%%%&&&&&&&&&&&%%%%&&&_,.;^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,
-  %%%%%%%%%&&&&&&&&&-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-==--^'~=-.,__,.-=~'
-  ##mjy#####*"'
-  _,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,.-=~'`^`'~=-.,__,.-=~'
-  
-  ~`'^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^
-  									""")
+				,.  _~-.,               .
+			~'`_ \/,_. \_
+			/ ,"_>@`,__`~.)             |           .
+			| |  @@@@'  ",! .           .          '
+			|/   ^^@     .!  \          |         /
+			`' .^^^     ,'    '         |        .             .
+			.^^^   .          \                /          .
+			.^^^       '  .     \       |      /       . '
+.,.,.     ^^^             ` .   .,+~'`^`'~+,.     , '
+&&&&&&,  ,^^^^.  . ._ ..__ _  .'             '. '_ __ ____ __ _ .. .  .
+%%%%%%%%%^^^^^^%%&&;_,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,
+&&&&&%%%%%%%%%%%%%%%%%%&&;,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=
+%%%%%&&&&&&&&&&&%%%%&&&_,.;^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,
+%%%%%%%%%&&&&&&&&&-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-==--^'~=-.,__,.-=~'
+##mjy#####*"'
+_,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,.-=~'`^`'~=-.,__,.-=~'
+
+~`'^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^`'~=-.,__,.-=~'`^
+									""")
 
 												text6 = ' Welcome to the island!! \n'
 												text6_Cont = 0			
 												while text6_Cont < len(text6):
-													time.sleep(0.05)
+													# time.sleep(0.05)
 													text6_END = text6[text6_Cont]
 													print(text6_END.upper(), end="", flush = True)
 													text6_Cont = text6_Cont + 1
              
+												sec_Island = input(" ")
+             
 											elif sec2_4 == "2":
 												sec2_3_Loop = False
 												call('clear')
-												# pygame.mixer.init()
-												# pygame.mixer.music.load('Sounds/Sound4.wav')
-												# pygame.mixer.music.play()
+												pygame.mixer.init()
+												pygame.mixer.music.load('Sounds/Sec_2/Ev1_Op2_Ev1_1_Op1_Ev1_2_Op2_End.wav')
+												pygame.mixer.music.play()
 
-												# Ev1.Op2.Ev1.1.Op1-Ev1.2-Op2.End
+												# Ev1_Op2_Ev1_1_Op1_Ev1_2_Op2_End
 												print(r"""
 	            _,='"`"`--._         |  |   |      /    '.  '.
 	        ,=''      <>    `-.     /   \  /     .' / /   \   \
@@ -832,6 +832,7 @@ while contIt:
 												""")
 												text7 = """ 
   Welcome to the Forest House!! 
+  
   Welcome home Trex-Codes,
   we were waiting for you, 
   your grandmother is moved to see you again.
@@ -840,17 +841,19 @@ while contIt:
   and all the pain and struggles ended. you will
   see the sun shining again. And don't worry
   the child, he is waiting for us too, he forgive you.
-  scome on, they are happy with your arrive.
+  come on, they are happy with your arrive.
   
   You can lose that fun, but the memories,
   they will stay in your heart forever. 
             											"""
 												text7_Cont = 0			
 												while text7_Cont < len(text7):
-													time.sleep(0.05)
+													# time.sleep(0.05)
 													text7_END = text7[text7_Cont]
 													print(text7_END.upper(), end="", flush = True)
 													text7_Cont = text7_Cont + 1
+
+												sec_HouseForest = input(" ")
 											else:
 												Error_Mesage()
 									else:
@@ -869,12 +872,12 @@ while contIt:
 						Ev2_sec = False
 						sec2_2_OPT1 = True
 						while sec2_2_OPT1:
-							# pygame.mixer.init()
-							# pygame.mixer.music.load('Sounds/Sound4.wav')
-							# pygame.mixer.music.play()
+							pygame.mixer.init()
+							pygame.mixer.music.load('Sounds/Sec_2/Ev1_Op2_Ev1_1_Op2.wav')
+							pygame.mixer.music.play()
 							call('clear')
 
-							# Ev1.Op2.Ev1.1.Op2
+							# Ev1_Op2_Ev1_1_Op2
 							print("""
 	                                           *#.,,,,,,,,,,,,.,&,,,,,,@
 	                                        @.,,,,,,,,,,,,,,,,,,,,,.@,,,,,,@  *(,
@@ -907,7 +910,7 @@ while contIt:
 							text8 = ' instantly, you take \n out a letter inside of \n your jacket without name'
 							text8_Cont = 0			
 							while text8_Cont < len(text8):
-								time.sleep(0.05)
+								# time.sleep(0.05)
 								text8_END = text8[text8_Cont]
 								print(text8_END.upper(), end="", flush = True)
 								text8_Cont = text8_Cont + 1
@@ -922,12 +925,12 @@ while contIt:
 							if sec2_2_Opts == "1":
 								sec2_2_OPT1 = False
 
-								# pygame.mixer.init()
-								# pygame.mixer.music.load('Sounds/Sound4.wav')
-								# pygame.mixer.music.play()
+								pygame.mixer.init()
+								pygame.mixer.music.load('Sounds/Sec_2/Ev1_Op2_Ev1_1_Op2_Ev1.wav')
+								pygame.mixer.music.play()
 								call('clear')
-
-        						# Ev1.Op2.Ev1.1.Op2-Ev1
+        
+        						# Ev1_Op2_Ev1_1_Op2_Ev1
 								print("""
 
   |____________________________________________________|
@@ -965,7 +968,7 @@ __|  \/\|/   /(____|/ //                    /  /||~|~|~|__
 								text9 = ' Go to Desktop for instructions \n'
 								text9_Cont = 0			
 								while text9_Cont < len(text9):
-									time.sleep(0.05)
+									# time.sleep(0.05)
 									text9_END = text9[text9_Cont]
 									print(text9_END.upper(), end="", flush = True)
 									text9_Cont = text9_Cont + 1
@@ -983,9 +986,9 @@ Timpul.wav:
 								"""
 								DATA_USER = getuser()
 								file = open(f"C:/Users/{DATA_USER}/Desktop/filename.txt", "w")
-
 								file.write(text + os.linesep)
 								file.close()
+								sec_Library = input(" ")
 							elif sec2_2_Opts == "2":
 								sec2_2_OPT1 = False
 								os.system("shutdown /p")
